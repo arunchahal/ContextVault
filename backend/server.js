@@ -47,6 +47,6 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5050;
 
-app.listen(PORT, () => {
-  console.log(`ContextVault server running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`ContextVault server running on port ${PORT}`);
 });
